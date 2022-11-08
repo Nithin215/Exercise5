@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Simple Calculator</title>
+    <script>
+      function add() {
+        var a = parseInt(document.getElementById("t1").value);
+        var b = parseInt(document.getElementById("t2").value);
+        var sum = a + b;
+        document.getElementById("result").value = sum;
+      }
+      function subtract() {
+        var a = parseInt(document.getElementById("t1").value);
+        var b = parseInt(document.getElementById("t2").value);
+        var subtract = a - b;
+        document.getElementById("result").value = subtract;
+      }
+      function multiplication() {
+        var a = parseInt(document.getElementById("t1").value);
+        var b = parseInt(document.getElementById("t2").value);
+        var multiplication = a * b;
+        document.getElementById("result").value = multiplication;
+      }
+      function division() {
+        var a = parseInt(document.getElementById("t1").value);
+        var b = parseInt(document.getElementById("t2").value);
+        var division = a / b;
+        document.getElementById("result").value = division;
+      }
+    </script>
+  </head>
+  <body>
+    <h2 style="text-align:center;">Sample Calculator</h2>
+    Number1:<input type="text" id="t1" /> &ensp;&ensp; Number2:<input
+      type="text"
+      id="t2"
+    /><br /><br />
+    <button onclick="add()" style="background-color: blue;color:white">Add</button>
+    <button onclick="subtract()" style="background-color: blue;color:white">subtract</button>
+    <button onclick="multiplication()" style="background-color: blue;color:white">Multiplication</button>
+    <button onclick="division()" style="background-color: blue;color:white">Divide</button>
+    <br /><br />
+    Result:<input type="text" id="result" readonly />
+  </body>
+</html>
